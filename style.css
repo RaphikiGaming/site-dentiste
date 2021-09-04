@@ -1,0 +1,1097 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+@media screen  and (orientation: portrait) and (min-width: 0px){
+
+}
+
+@media screen and (orientation: portrait) and (min-width: 800px){
+
+}
+
+@media screen and (orientation: portrait) and (min-width: 1024px){
+
+}
+
+@media screen  and (orientation: landscape) and (min-width: 100px) and (max-width: 799px){
+  header{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+  }
+
+    ul{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+      li{
+        padding: 16px 5px;
+        font-size: 16px;
+        font-family: calibri;
+        color: #0984e3;
+        display: inline;
+        transition: border 0.1s;
+      }
+
+      li:hover{
+        border-bottom: 2px solid #0984e3;
+      }
+
+  main{
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+  }
+
+    .c_main{
+      height: 100%;
+      width: 100%;
+      max-width: 1750px;
+      background-color: #fff;
+      position: relative;
+    }
+
+      .accueil{
+        height: 100vh;
+        max-height: 500px;
+        width: 100%;
+        position: relative;
+      }
+
+        .accueil > .c_1{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 0;
+        }
+
+          h1{
+            font-size: 30px;
+            font-family: "Caviar Dreams";
+            font-weight: lighter;
+            color: #74b9ff;
+          }
+
+        .accueil > .c_2{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 50%;
+        }
+
+          .accueil > .c_2 > .c_img{
+            width: 60%;
+            max-width: 300px;
+            min-width: 50px;
+            aspect-ratio: 4/5;
+            background: linear-gradient(35deg, #74b9ff,#0984e3);
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            top: 35px;
+            left: 35px;
+          }
+
+            .accueil > .c_2 > .c_img > img{
+              position: absolute;
+              bottom: 35px;
+              right: 35px;
+            }
+
+            img{
+              max-width: 100%;
+            }
+
+            .accueil > .c_2 > .c_img > h3{
+              position: relative;
+              top: 20px;
+              left: 10px;
+            }
+
+            h3{
+              font-size: 18px;
+              font-family: "Lucida Calligraphy";
+              font-weight: lighter;
+              color: #fff;
+            }
+
+      .a_propos{
+        height: 250vh;
+        max-height: 1750px;
+        min-height: 850px;
+        width: 100%;
+        background-size: cover;
+        background-image: url("img/bg1.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+      }
+
+        .a_propos > h2{
+          padding: 5px 10px;
+          background-color: #fff;
+        }
+
+        h2{
+          font-size: 25px;
+          font-family: "Caviar Dreams";
+          font-weight: lighter;
+          color: #74b9ff;
+        }
+
+        .a_propos > .c_1{
+          max-width: 800px;
+          padding: 30px 50px;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+
+          p{
+            font-size: 20px;
+            font-family: calibri;
+            color: #000;
+            text-align: center;
+          }
+
+          .a_propos > .c_2{
+            max-width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .a_propos > .c_2 > h1{
+            font-size: 22px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+          }
+
+          .a_propos > .c_2 > h2{
+            font-size: 20px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: lighter;
+            text-align: center;
+            color: #000;
+          }
+
+          .a_propos > .c_2 > p{
+            margin: 50px 0;
+          }
+
+      .horaires{
+        height: 200vh;
+        max-height: 900px;
+        min-height: 700px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+        .horaires > .card{
+          height: 90%;
+          max-height: 900px;
+          width: 80%;
+          background: linear-gradient(35deg, #74b9ff,#0984e3);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+
+        .horaires > .card > .c_1{
+          height: 40%;
+          width: 100%;
+          border-bottom: 2px solid #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          top: 0;
+        }
+
+          h4{
+            font-size: 30px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: bold;
+            color: #fff;
+          }
+
+          .horaires > .card > .c_1 > .c_heures{
+            height: 80%;
+            width: 100%;
+          }
+
+            .horaires > .card > .c_1 > .c_heures > .p_jours{
+              font-size: 25px;
+              font-weight: bold;
+            }
+
+            .horaires > .card > .c_1 > .c_heures > p{
+              color: #fff;
+            }
+
+        .horaires > .card > .c_2{
+          height: 60%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          top: 40%;
+        }
+
+          .horaires > .card > .c_2 > .c_map{
+            height: 70%;
+            width: 100%;
+          }
+
+            .horaires > .card > .c_2 > .c_map > iframe{
+              height: 100%;
+              width: 100%;
+            }
+
+      .contact{
+        height: 50vh;
+        max-height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .visite{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .c_slider{
+        width: 100%; /*ajustez pour le responsive*/
+        max-width: 800px; /*ajustez pour le responsive*/
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        position: relative;
+      }
+
+        .c_slider > .c_img{
+          height: 100%;
+          width: auto;
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          transition: left 1s;
+          position: absolute;
+          top: 0;
+          left: -100%;
+        }
+
+          .c_slider > .c_img > img{
+            height: 100%;
+            aspect-ratio: 16/9;
+          }
+
+        .c_slider > .c_btn{
+          height: 10vh; /*ajustez pour le responsive*/
+          width: 100%;
+          aspect-ratio: 16/9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+          .btn-slider{
+            padding: 0;
+            color: #0984e3; /*mettre valeur de la variable js color*/
+            background-color: inherit;
+            border: none;
+            outline: none;
+          }
+
+          .btn-slider > svg{
+            height: 30px; /*ajustez pour le responsive*/
+            aspect-ratio: 1/1;
+            transition: height 0.5s, width 0.5s;
+          }
+
+          .btn-slider:hover > svg{
+            height: 40px; /*ajustez pour le responsive*/
+          }
+
+          .circle{
+            height: 15px;
+            margin: 0 5px;
+            aspect-ratio: 1/1;
+            border: 2px solid #0984e3; /*mettre valeur de la variable js color | ajustez pour le responsive*/
+            border-radius: 100%;
+            transition: background-color 1s;
+          }
+}
+
+@media screen and (orientation: landscape) and (min-width: 800px) and (max-width: 1279px){
+  header{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+  }
+
+    ul{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+      li{
+        padding: 18px 15px;
+        font-size: 25px;
+        font-family: calibri;
+        color: #0984e3;
+        display: inline;
+        transition: border 0.1s;
+      }
+
+      li:hover{
+        border-bottom: 3px solid #0984e3;
+      }
+
+  main{
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+  }
+
+    .c_main{
+      height: 100%;
+      width: 100%;
+      max-width: 1750px;
+      background-color: #fff;
+      position: relative;
+    }
+
+      .accueil{
+        height: 100vh;
+        max-height: 1000px;
+        width: 100%;
+        position: relative;
+      }
+
+        .accueil > .c_1{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 0;
+        }
+
+          h1{
+            font-size: 50px;
+            font-family: "Caviar Dreams";
+            font-weight: lighter;
+            color: #74b9ff;
+          }
+
+        .accueil > .c_2{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 50%;
+        }
+
+          .accueil > .c_2 > .c_img{
+            width: 40%;
+            max-width: 500px;
+            min-width: 250px;
+            aspect-ratio: 4/5;
+            background: linear-gradient(35deg, #74b9ff,#0984e3);
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            top: 50px;
+            left: 50px;
+          }
+
+            .accueil > .c_2 > .c_img > img{
+              position: absolute;
+              bottom: 50px;
+              right: 50px;
+            }
+
+            img{
+              max-width: 100%;
+            }
+
+            .accueil > .c_2 > .c_img > h3{
+              position: relative;
+              top: 35px;
+              left: 20px;
+            }
+
+            h3{
+              font-size: 32px;
+              font-family: "Lucida Calligraphy";
+              font-weight: lighter;
+              color: #fff;
+            }
+
+      .a_propos{
+        height: 250vh;
+        max-height: 1750px;
+        width: 100%;
+        background-size: cover;
+        background-image: url("img/bg1.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+      }
+
+        .a_propos > h2{
+          padding: 10px 20px;
+          background-color: #fff;
+        }
+
+        h2{
+          font-size: 55px;
+          font-family: "Caviar Dreams";
+          font-weight: lighter;
+          color: #74b9ff;
+        }
+
+        .a_propos > .c_1{
+          max-width: 1500px;
+          padding: 30px 50px;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+
+          p{
+            font-size: 30px;
+            font-family: calibri;
+            color: #000;
+            text-align: center;
+          }
+
+          .a_propos > .c_2{
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .a_propos > .c_2 > h1{
+            font-size: 40px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+          }
+
+          .a_propos > .c_2 > h2{
+            font-size: 30px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: lighter;
+            text-align: center;
+            color: #000;
+          }
+
+          .a_propos > .c_2 > p{
+            margin: 50px 0;
+          }
+
+      .horaires{
+        height: 90vh;
+        max-height: 900px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+        .horaires > .card{
+          height: 80%;
+          max-height: 900px;
+          width: 80%;
+          background: linear-gradient(35deg, #74b9ff,#0984e3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+
+        .horaires > .card > .c_1{
+          height: 100%;
+          width: 40%;
+          border-right: 2px solid #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          left: 0;
+        }
+
+          h4{
+            font-size: 55px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: bold;
+            color: #fff;
+          }
+
+          .horaires > .card > .c_1 > .c_heures{
+            height: 70%;
+            width: 100%;
+          }
+
+            .horaires > .card > .c_1 > .c_heures > .p_jours{
+              font-size: 35px;
+              font-weight: bold;
+            }
+
+            .horaires > .card > .c_1 > .c_heures > p{
+              color: #fff;
+            }
+
+        .horaires > .card > .c_2{
+          height: 100%;
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          left: 40%;
+        }
+
+          .horaires > .card > .c_2 > .c_map{
+            height: 70%;
+            width: 100%;
+          }
+
+            .horaires > .card > .c_2 > .c_map > iframe{
+              height: 100%;
+              width: 100%;
+            }
+
+      .contact{
+        height: 60vh;
+        max-height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .visite{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .c_slider{
+        width: 100%; /*ajustez pour le responsive*/
+        max-width: 1750px; /*ajustez pour le responsive*/
+        aspect-ratio: 16/9;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+        .c_slider > .c_img{
+          height: 100%;
+          width: auto;
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          transition: left 1s;
+          position: absolute;
+          top: 0;
+          left: -100%;
+        }
+
+          .c_slider > .c_img > img{
+            height: 100%;
+            aspect-ratio: 16/9;
+          }
+
+        .c_slider > .c_btn{
+          height: 10vh; /*ajustez pour le responsive*/
+          width: 100%;
+          aspect-ratio: 16/9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+          .btn-slider{
+            padding: 0;
+            color: #0984e3; /*mettre valeur de la variable js color*/
+            background-color: inherit;
+            border: none;
+            outline: none;
+          }
+
+          .btn-slider > svg{
+            height: 35px; /*ajustez pour le responsive*/
+            aspect-ratio: 1/1;
+            transition: height 0.5s, width 0.5s;
+          }
+
+          .btn-slider:hover > svg{
+            height: 40px; /*ajustez pour le responsive*/
+          }
+
+          .circle{
+            height: 20px;
+            margin: 0 5px;
+            aspect-ratio: 1/1;
+            border: 2px solid #0984e3; /*mettre valeur de la variable js color | ajustez pour le responsive*/
+            border-radius: 100%;
+            transition: background-color 1s;
+          }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1280px){
+  header{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+  }
+
+    ul{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+      li{
+        padding: 18px 15px;
+        font-size: 30px;
+        font-family: calibri;
+        color: #0984e3;
+        display: inline;
+        transition: border 0.1s;
+      }
+
+      li:hover{
+        border-bottom: 3px solid #0984e3;
+      }
+
+  main{
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+  }
+
+    .c_main{
+      height: 100%;
+      width: 100%;
+      max-width: 1750px;
+      background-color: #fff;
+      position: relative;
+    }
+
+      .accueil{
+        height: 100vh;
+        max-height: 1000px;
+        width: 100%;
+        position: relative;
+      }
+
+        .accueil > .c_1{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 0;
+        }
+
+          h1{
+            font-size: 75px;
+            font-family: "Caviar Dreams";
+            font-weight: lighter;
+            color: #74b9ff;
+          }
+
+        .accueil > .c_2{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 50%;
+        }
+
+          .accueil > .c_2 > .c_img{
+            width: 40%;
+            max-width: 750px;
+            min-width: 300px;
+            aspect-ratio: 4/5;
+            background: linear-gradient(35deg, #74b9ff,#0984e3);
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            top: 50px;
+            left: 50px;
+          }
+
+            .accueil > .c_2 > .c_img > img{
+              position: absolute;
+              bottom: 50px;
+              right: 50px;
+            }
+
+            img{
+              max-width: 100%;
+            }
+
+            .accueil > .c_2 > .c_img > h3{
+              position: relative;
+              top: 35px;
+              left: 20px;
+            }
+
+            h3{
+              font-size: 35px;
+              font-family: "Lucida Calligraphy";
+              font-weight: lighter;
+              color: #fff;
+            }
+
+      .a_propos{
+        height: 200vh;
+        max-height: 1500px;
+        width: 100%;
+        background-size: cover;
+        background-image: url("img/bg1.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+      }
+
+        .a_propos > h2{
+          padding: 10px 20px;
+          background-color: #fff;
+        }
+
+        h2{
+          font-size: 55px;
+          font-family: "Caviar Dreams";
+          font-weight: lighter;
+          color: #74b9ff;
+        }
+
+        .a_propos > .c_1{
+          max-width: 1500px;
+          padding: 30px 50px;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+
+          p{
+            font-size: 30px;
+            font-family: calibri;
+            color: #000;
+            text-align: center;
+          }
+
+          .a_propos > .c_2{
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .a_propos > .c_2 > h1{
+            font-size: 45px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+          }
+
+          .a_propos > .c_2 > h2{
+            font-size: 35px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: lighter;
+            text-align: center;
+            color: #000;
+          }
+
+          .a_propos > .c_2 > p{
+            margin: 50px 0;
+          }
+
+      .horaires{
+        height: 90vh;
+        max-height: 900px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+        .horaires > .card{
+          height: 80%;
+          max-height: 900px;
+          width: 60%;
+          background: linear-gradient(35deg, #74b9ff,#0984e3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+
+        .horaires > .card > .c_1{
+          height: 100%;
+          width: 50%;
+          border-right: 2px solid #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          left: 0;
+        }
+
+          h4{
+            font-size: 55px;
+            line-height: 0px;
+            font-family: "Caviar Dreams";
+            font-weight: bold;
+            color: #fff;
+          }
+
+          .horaires > .card > .c_1 > .c_heures{
+            height: 70%;
+            width: 100%;
+          }
+
+            .horaires > .card > .c_1 > .c_heures > .p_jours{
+              font-size: 35px;
+              font-weight: bold;
+            }
+
+            .horaires > .card > .c_1 > .c_heures > p{
+              color: #fff;
+            }
+
+        .horaires > .card > .c_2{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          left: 50%;
+        }
+
+          .horaires > .card > .c_2 > .c_map{
+            height: 70%;
+            width: 100%;
+          }
+
+            .horaires > .card > .c_2 > .c_map > iframe{
+              height: 100%;
+              width: 100%;
+            }
+
+      .contact{
+        height: 60vh;
+        max-height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .visite{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .c_slider{
+        width: 100%; /*ajustez pour le responsive*/
+        max-width: 1750px; /*ajustez pour le responsive*/
+        aspect-ratio: 16/9;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+        .c_slider > .c_img{
+          height: 100%;
+          width: auto;
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          transition: left 1s;
+          position: absolute;
+          top: 0;
+          left: -100%;
+        }
+
+          .c_slider > .c_img > img{
+            height: 100%;
+            aspect-ratio: 16/9;
+          }
+
+        .c_slider > .c_btn{
+          height: 10vh; /*ajustez pour le responsive*/
+          width: 100%;
+          aspect-ratio: 16/9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+          .btn-slider{
+            padding: 0;
+            color: #0984e3; /*mettre valeur de la variable js color*/
+            background-color: inherit;
+            border: none;
+            outline: none;
+          }
+
+          .btn-slider > svg{
+            height: 40px; /*ajustez pour le responsive*/
+            aspect-ratio: 1/1;
+            transition: height 0.5s, width 0.5s;
+          }
+
+          .btn-slider:hover > svg{
+            height: 50px; /*ajustez pour le responsive*/
+          }
+
+          .circle{
+            height: 20px;
+            margin: 0 5px;
+            aspect-ratio: 1/1;
+            border: 3px solid #0984e3; /*mettre valeur de la variable js color | ajustez pour le responsive*/
+            border-radius: 100%;
+            transition: background-color 1s;
+          }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #74b9ff;
+  border: none;
+  border-radius: 1vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #227093;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #227093;
+}
+::-webkit-scrollbar-track {
+  background: #c7ecee;
+  border: none;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
